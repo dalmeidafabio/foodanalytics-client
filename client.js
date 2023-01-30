@@ -5,7 +5,6 @@ const config = {
   tokenUrl: "http://auth.algafood.local:8081/oauth/token",
   callbackUrl: "http://aplicacao-cliente",
   cozinhasUrl: "http://api.algafood.local:8080/v1/cozinhas"
-  
 };
 
 let accessToken = "";
