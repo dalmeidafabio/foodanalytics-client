@@ -3,8 +3,9 @@ const config = {
   clientSecret: "food123",
   authorizeUrl: "http://auth.algafood.local:8081/oauth/authorize",
   tokenUrl: "http://auth.algafood.local:8081/oauth/token",
-  callbackUrl: "http://aplicacao-cliente",
-  cozinhasUrl: "http://api.algafood.local:8080/v1/cozinhas"
+  callbackUrl: "http://127.0.0.1:5500",
+  cozinhasUrl: "http://api.algafood.local:8080/v2/cozinhas",
+  cidadesUrl: "http://api.algafood.local:8080/v1/cidades"
 };
 
 let accessToken = "";
@@ -13,7 +14,7 @@ function consultar() {
   alert("Consultando recurso com access token " + accessToken);
 
   $.ajax({
-    url: config.cozinhasUrl,
+    url: config.cidadesUrl,
     type: "get",
 
     beforeSend: function(request) {
