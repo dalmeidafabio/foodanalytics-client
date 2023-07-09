@@ -1,9 +1,9 @@
 const config = {
   clientId: "foodanalytics",
-  clientSecret: "food123",
-  authorizeUrl: "http://auth.algafood.local:8081/oauth/authorize",
-  tokenUrl: "http://auth.algafood.local:8081/oauth/token",
-  callbackUrl: "http://127.0.0.1:5500",
+  clientSecret: "123",
+  authorizeUrl: "http://auth.algafood.local:8080/oauth/authorize",
+  tokenUrl: "http://auth.algafood.local:8080/oauth/token",
+  callbackUrl: "http://www.foodanalytics.local:5500",
   cozinhasUrl: "http://api.algafood.local:8080/v2/cozinhas",
   cidadesUrl: "http://api.algafood.local:8080/v1/cidades"
 };
